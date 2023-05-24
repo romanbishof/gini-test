@@ -138,9 +138,15 @@
   }
 
   button {
+    background-color: aqua;
+    border: 3px;
     width: 150px;
     border-radius: 7px;
     margin-top: 10px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: rgb(5, 212, 212);
   }
 
   .error {
