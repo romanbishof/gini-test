@@ -141,6 +141,7 @@
     background-color: aqua;
     border: 3px;
     width: 150px;
+    height: 25px;
     border-radius: 7px;
     margin-top: 10px;
     cursor: pointer;
