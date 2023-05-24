@@ -120,6 +120,26 @@
 </form>
 
 <style>
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label {
+    min-width: 350px;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    width: 150px;
+    border-radius: 7px;
+    margin-top: 10px;
+  }
+
   .error {
     color: red;
   }
