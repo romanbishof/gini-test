@@ -57,10 +57,10 @@
       bind:value={firstName}
       on:input={() => (firstNameError = validateFirstName(firstName))}
     />
-    {#if firstNameError}
-      <p class="error">{firstNameError}</p>
-    {/if}
   </label>
+  {#if firstNameError}
+    <p class="error">{firstNameError}</p>
+  {/if}
 
   <label>
     Last Name:
@@ -69,10 +69,10 @@
       bind:value={lastName}
       on:input={() => (lastNameError = validateLastName(lastName))}
     />
-    {#if lastNameError}
-      <p class="error">{lastNameError}</p>
-    {/if}
   </label>
+  {#if lastNameError}
+    <p class="error">{lastNameError}</p>
+  {/if}
 
   <label>
     Email:
@@ -81,10 +81,10 @@
       bind:value={email}
       on:input={() => (emailError = validateEmail(email))}
     />
-    {#if emailError}
-      <p class="error">{emailError}</p>
-    {/if}
   </label>
+  {#if emailError}
+    <p class="error">{emailError}</p>
+  {/if}
 
   <label>
     Phone:
@@ -99,10 +99,10 @@
       bind:value={phoneNumber}
       on:input={() => (phoneError = validatePhoneNumber(phoneNumber))}
     />
-    {#if phoneError}
-      <p class="error">{phoneError}</p>
-    {/if}
   </label>
+  {#if phoneError}
+    <p class="error">{phoneError}</p>
+  {/if}
 
   <label>
     Password:
@@ -111,25 +111,28 @@
       bind:value={password}
       on:input={() => (passwordError = validatePassword(password))}
     />
-    {#if passwordError}
-      <p class="error">{passwordError}</p>
-    {/if}
   </label>
+  {#if passwordError}
+    <p class="error">{passwordError}</p>
+  {/if}
 
   <button type="submit">Submit</button>
 </form>
 
 <style>
+  p {
+    height: 1px;
+    font-size: 15px;
+  }
   form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
   label {
     min-width: 350px;
-    padding: 5px 5px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
   }
